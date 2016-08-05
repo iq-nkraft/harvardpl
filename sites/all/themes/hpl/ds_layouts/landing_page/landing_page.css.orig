@@ -1,0 +1,92 @@
+.page-node-155 .inset.dark {
+	padding-bottom:0;
+	margin-bottom:3em;
+}
+@media screen and (min-width: 768px) {
+	.webform-client-form-155 .form-item.webform-component--name {
+	  float: left;
+	  width: 48%;
+	}
+	.webform-client-form-155 .form-item.webform-component--email {
+	  float: right;
+	  width: 48%;
+	}
+	.webform-client-form-155 .form-item.webform-component--message {
+	  width: 100%;
+	  clear:both;
+<<<<<<< HEAD
+	}	
+     
+=======
+	}		
+    
+>>>>>>> origin/dev
+} 
+
+.page-node-155 .map {
+	width:320px;
+	margin:0 auto 2em;
+}
+@media screen and (min-width: 768px) {
+	.page-node-155 .map {
+		float:left;
+		margin:0 0 2em;
+	}
+}
+
+@media screen and (min-width: 1220px) {
+	.page-node-155 .contact-information {
+	  width: 640px;
+	  float: right;
+	  box-sizing: border-box;
+	  padding: 0 5%;
+	}
+	.page-node-155 .contact-item {
+		box-sizing: border-box;
+		width: 50%;
+  		padding: 0 1%;
+		float: left;
+		margin-top: 3em;
+	}	
+	.page-node-155 .map {
+		float:left;
+		margin:0 0 0;
+	}	
+}
+
+/* EMPLOYEE PORTAL */
+.employee-wrapper .left.image-float {
+	width:100%;
+	max-width: 237px;
+	margin:0 auto;
+	float:none;
+}
+.employee-wrapper .right.employee-service {
+	float:none;
+	text-align: center;
+}
+.right.employee-service h3 {
+	text-align: center;
+}
+.employee-service p {
+	margin:0;
+}
+
+@media screen and (min-width: 600px) {
+	.employee-wrapper .left.image-float {
+		width:25%;
+		max-width: 237px;
+		float:left;
+		margin: 0 5% 1em 0;	
+	}
+	.employee-wrapper .right.employee-service {
+		width:70%;
+		float:right;
+		text-align: left;
+	}	
+	.right.employee-service h3 {
+		text-align: left;
+	}	
+}
+
+

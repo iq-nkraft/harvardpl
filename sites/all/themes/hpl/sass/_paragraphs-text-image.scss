@@ -1,0 +1,19 @@
+.text-plus-image-wrapper {
+  margin-bottom:2em;
+  .column-left {
+    @media (min-width: $break-tablet) {
+      width:60%;
+      float:left;
+    }
+  }
+  .column-right {
+    @media (min-width: $break-tablet) {
+      width:35%;
+      float:right;
+    }		
+    img {
+     width:100%;
+     height:auto;
+   }
+ }
+}

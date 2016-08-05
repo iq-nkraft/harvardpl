@@ -1,0 +1,203 @@
+/* ## THIS FILE CONTAINS STYLES FOR HERO BOXES, ROTATOR BOXES, FEATURED BOXES, and the TRANSPARENT GREY BOX USED WITH ALL OF THOSE STYLISTIC ELEMENTS ## */
+/* 1) STYLES for FEATURED CONTENT BOX AT TOP OF PAGE */
+.featured {
+  width:100%;
+  overflow: hidden;
+  height:300px;
+  box-sizing: border-box;
+  margin:0 auto 0;
+  position: relative;
+  background-size:cover;
+  &.margin-bottom {
+    margin-bottom:$margin-bottom;
+  }
+  @media (min-width: $break-tablet) { 
+    height:400px;
+  }    
+  > img {
+    width:100%;
+    height: auto;
+    max-width: 100%;
+  }
+  h2 {
+    font-size:2.8rem;
+    font-weight:300;
+    text-transform: uppercase;
+    margin:0.2em 0;
+    @media (min-width: $break-tablet) { 
+      font-size:3.6rem;
+      font-weight:400;
+    }      
+    &:last-child {
+      margin-bottom:1em;
+    }    
+  }
+  .subtitle {
+    margin-bottom:0;
+  }
+  .grey-box {
+    width:85%;
+    max-width: 960px;
+  }
+}
+
+/* 2) STYLES for HERO CONTENT BOX AT TOP OF PAGE */
+.hero {
+  width:100%;
+  overflow: hidden;
+  height:300px;
+  box-sizing: border-box;
+  margin:0 auto 0;
+  position: relative;
+  background-size:cover;
+  &.margin-bottom {
+    margin-bottom:$margin-bottom;
+  }  
+  @media (min-width: $break-tablet) { 
+    height:400px;
+  }  
+  > img {
+    width:100%;
+    height: auto;
+    max-width: 100%;
+  }
+  h2, h1 {
+    font-size:2.8rem;
+    font-weight:300;
+    text-transform: uppercase;
+    margin:0.2em 0;
+    @media (min-width: $break-tablet) { 
+      font-size:3.6rem;
+      font-weight:400;
+    }   
+    &:last-child {
+      margin-bottom:.5em;
+    }
+  }
+  .subtitle {
+    margin-bottom:0;
+  }
+  .grey-box {
+    width:85%;
+    max-width: 960px;
+  }
+}
+
+/* 3) STYLES for ROTATOR BOX ON HOMEPAGE */
+.view-mode-rotator {
+  width:100%;
+  overflow: hidden;
+  height:300px;
+  box-sizing: border-box;
+  margin:0 auto 0;
+  position: relative;
+  background-size:cover;
+  &.margin-bottom {
+    margin-bottom:$margin-bottom;
+  }  
+  @media (min-width: $break-tablet) { 
+    height:500px;
+  }  
+  > img {
+    width:100%;
+    height: auto;
+    max-width: 100%;
+  }
+  h2, h1 {
+    font-size:2.8rem;
+    font-weight:300;
+    text-transform: uppercase;
+    margin:0.2em 0;
+    @media (min-width: $break-tablet) { 
+      font-size:3.6rem;
+      font-weight:400;
+    }   
+    &:last-child {
+      margin-bottom:.5em;
+    }
+  }
+  .subtitle {
+    margin-bottom:0;
+  }
+  .grey-box {
+    width:85%;
+    max-width: 960px;
+    background: rgba(0, 0, 0, 0.55);
+  }
+}
+
+/* 4) STYLES for HERO BOX WITHIN CONTENT OF AN ARTICLE/BLOG POST */
+.hero.content-hero {
+  position: relative;
+  width: auto;
+  margin-bottom: 3em;
+  width:100%;
+  @media (min-width: $break-tablet) { 
+      margin-left: -8%;
+      margin-right: -8%;
+      width:auto;
+  } 
+  @media (min-width: $break-medium) { 
+      margin-left: -26%;
+      margin-right: -26%;
+  }   
+}
+
+/* 5) STYLES for TRANSPARENT GREY BOX USED OVER HERO, FEATURED, and ROTATOR CONTENT BLOCKS */
+.grey-box {
+  background:$dark-grey;
+  background:$dark-grey-rgba;
+  box-sizing:border-box;
+  color:#FFF;
+  text-align: center;
+  padding:1em .5em;
+  @media (min-width: $break-tablet) { 
+    padding:2em 1em;
+  }  
+  &.absolute {
+    left:50%;
+    top:50%;
+    -ms-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  .button {
+    margin-top:1em;
+  }
+  h3.subtitle {
+    text-align: center;
+    margin-bottom:0;
+  }
+}
+.absolute {
+  position: absolute;
+}
+.relative {
+  position:relative;
+}
+.title-prefix {
+  font-family:$serif;
+  font-size:1.8rem;
+  display:block;
+  line-height: 100%;
+  font-weight:400!important;
+  @media (min-width: $break-tablet) { 
+    font-size:1.8rem;
+  }    
+  a {
+    color:#FFF;
+    text-decoration: underline;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+.subtitle {
+  font-family: $serif;
+  font-size:1.8rem;
+  font-weight:400!important;
+  @media (min-width: $break-tablet) { 
+    font-size:2.4rem;
+  }   
+}

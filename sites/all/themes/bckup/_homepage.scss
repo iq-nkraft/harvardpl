@@ -1,0 +1,202 @@
+.homepage-hero {
+	background-size:cover;
+	background-image:url(../images/hpl-homepage-v3.jpg);
+	background-repeat:no-repeat;
+	width:100%;
+	height:300px;
+	@media (min-width: $break-desktop) {
+		height:400px;
+	}
+	@media (min-width: $break-widescreen) {
+		height:600px;
+	}	
+	position:relative;
+	background-position: center center;
+
+}
+.open-today {
+	padding:1em 0;
+	position:relative;
+	z-index:10;
+	h2 {
+		margin:0;
+		padding:0;
+		line-height: 1;
+		font-size:20px;
+		@media (min-width: $break-tablet) {
+			font-size:24px;
+		}
+		@media (min-width: $break-large) {
+			font-size:32px;
+		}
+	}
+}
+
+.homepage-calendar {
+    box-sizing: border-box;
+    .views-row {
+    	margin-bottom:.5em;
+    	padding-bottom: .5em;
+    	border-bottom: dashed 1px $border-grey;
+    	&:last-child {
+    		border-bottom:none;
+    		margin-bottom:0;
+    	}	
+    	@extend .clearfix;
+    	div {
+    		box-sizing:border-box;
+    	}
+    	.calendar-date {
+    		float:left;
+    		width:74px;
+    		color:$text-grey;
+    		@media (min-width: $break-medium) {
+    			width:12%;
+    		}
+    	}
+		.calendar-time {
+		    float:left;
+		    width:220px;
+		    color:$text-grey;
+    		@media (min-width: $break-medium) {
+    			width:19%;
+    		}		    
+		}    	
+    	.calendar-title {
+    		float:right;
+    		width:100%;
+    		@media (min-width: $break-medium) {
+    			width:69%;
+    		}	    		
+    	}
+    }
+}
+
+#highlighted {
+	background:$teal;
+	color:$blue-dark;
+	padding:3em 0;
+	h2 {
+		color:$accent1;
+	}
+}
+
+#highlighted2 {
+	background:$blue-dark;
+	background: lighten($accent4, 20%); 
+	color:$secondary-color;
+	padding:3em 0;
+	a {
+		color:$secondary-color;
+	}
+	.button {
+		color:$secondary-color;
+		// background:lighten($blue-dark, 5%);
+		border-color:$secondary-color;
+		box-shadow:none;
+		&:hover {
+			color:$secondary-color;
+		}
+	}
+	.views-field-body, .views-field-created {
+		color:$text-grey;
+	}
+}
+
+#highlighted3 {
+	background: #FFF;
+	padding:3em 0;
+	h2 {
+		color:$accent1;
+	}
+	.block {
+		p:last-child {
+			margin:0;
+		}
+	}
+	.button {
+		color:$accent1!important;
+		border-color:$accent1!important;
+	}
+	.large-icon {
+		color:$accent1;
+	}
+}
+
+.book-rotator {
+    width: 76%;
+    margin: 0 auto;
+    position:relative;
+    clear:both;
+    &:before, &:after {
+    	position:absolute;
+    	font-size:30px;
+    	line-height: 30px;
+    	top:50%;
+    	margin-top:-25px;
+    	color:$accent1;
+    }
+    &:before {
+    	position:absolute;
+    	content:'\e889';
+    	font-family:Linearicons-Free;
+    	left:-44px;
+    }
+    &:after {
+    	position:absolute;
+    	content:'\e88a';
+    	font-family:Linearicons-Free;
+    	right:-44px;
+    }    
+	.slide {
+		box-sizing:border-box;
+		padding:0 1%;
+		float:left;
+		img {
+			@extend .shadow;
+			width:100%;
+			height:auto;
+		}
+	}
+	.slide-1,.slide-3 {
+		width:32%;
+		margin-top:10px;
+	}
+	.slide-2 {
+		width:36%;
+	}
+}
+
+.homepage-hours {
+	.views-row {
+		@extend .clearfix;
+		margin-bottom:.25em;
+		padding-bottom:.25em;
+		border-bottom:1px dashed $border-grey;
+		&:last-child {
+			border-bottom:none;
+			margin-bottom:0;
+		}
+	}
+	.view-hours {
+		width: 100%;
+    	max-width: 300px;
+    	margin: 0 auto;		
+	}	
+	.hours-day {
+		float: left;
+	    width: 20%;
+	    margin-right: 15%;
+	    text-align: right;
+	}
+	.hours-time {
+		float:left;
+		width:65%;
+		text-align: left;
+	}
+}
+
+.views-field-created {
+    font-size: .85em;
+    margin-bottom: 1em;
+}

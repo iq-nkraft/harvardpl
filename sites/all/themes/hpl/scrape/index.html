@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Web Scraping Part 2 - jQuery Ajax PHP</title>
+	<link rel="stylesheet" href="assets/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu:300' rel='stylesheet' type='text/css'>
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$('#url').on('keyup', function(e){
+			if(e.which == 13) {
+				$('.imageholder').html('');
+				$('.loader').html('<img src="assets/loader.gif">');
+				//var url = $(this).val();
+				var url = "https://www.flickr.com/cameras/samsung/galaxy_s_iii/";
+				$.ajax({
+					url: 'process.php',
+					data: 'url='+url,
+					dataType: 'json',
+					type: 'POST',
+					success: function(response){
+						if(response.status == 'Success') {
+							$('.loader').html('');
+							for(var i=0; i<response.imageset.length; i++) {
+								var url = response.imageset[i];
+								if(url != false)
+									$('.imageholder').append('<img class="flickrimage" src="'+url+'">');
+							}
+						}
+					},
+					error: function(e){
+						$('.loader').html('');
+						$('.imageholder').append('<h3>Error processing your request!</h3>');
+					}
+				});
+			}
+		});
+	});
+	</script>
+</head>
+<body>
+	<div id="demo-header"></div>
+
+	<div class="container">
+		<div class="holder">
+			<input type="text" placeholder="Flickr URL" id="url"> 
+			<span class="loader"></span>
+			<div class="imageholder">
+			</div>
+		</div>
+	</div>
+
+
+
+</body>
+</html>

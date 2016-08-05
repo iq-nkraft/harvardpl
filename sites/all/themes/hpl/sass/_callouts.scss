@@ -1,0 +1,98 @@
+/* ## STYLES FOR CALL OUT ELEMENTS, RED AND TEAL BOXES WITH WHITE TEXT FOR EMPHASIZING CONTENT ## */
+.call-out {
+  box-sizing: border-box;
+  background-color: $iq-red;
+  color:#FFF;
+  font-size:1.1em;
+  line-height:1.6;
+  margin-bottom: 2em;
+  padding:1em;
+  text-align: center;
+  a {
+    color:#FFF;
+  }
+  @media screen and (min-width: $break-tablet) {
+    padding:2em;
+    &.special {
+      padding:1em;
+    }
+  }  
+  &.special {
+    text-align: left;
+    .left {
+      float:left;
+    }
+  } 
+  &.text-left {
+    text-align: left;
+    &:after {
+      @extend .u-cf;
+    }
+  } 
+  
+  @media screen and (min-width: $break-tablet) {
+    font-size:1.2em;
+  }
+  
+  .eight.columns & {
+    @media screen and (min-width: $break-tablet) {
+      position: relative;
+      margin-left:-8%;
+      margin-right:-8%;
+    } 
+    @media screen and (min-width: $break-medium) {
+      margin-left:-26%;
+      margin-right:-26%;
+    } 
+  }
+  
+  &.with-image {
+    background-size: cover;
+    .call-out-inner {
+      
+    } 
+  }
+  &.iq-all-caps {
+    text-transform: uppercase;
+    font-size: 1.4em;
+    font-weight: 300;
+    padding: 1em 2em;
+    @media screen and (min-width: $break-tablet) {
+      font-size: 2em;
+    }
+  } 
+  &.alt {
+    background-color: $iq-dark-teal;
+    h2 span {
+      background: $iq-dark-teal;
+    }
+  
+    &.with-image {
+
+    }
+  }
+
+  h2 {
+    text-transform: uppercase;
+    font-weight:300;
+    background:url(../images/bg-dotted-white.png) repeat-x center;
+    background-size:10px;
+    span {
+      display: inline-block;
+      padding: 0 .5em;
+      background:rgba(195,15,47,1);
+    }    
+  }
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+}
+
+.call-out-inner {
+  box-sizing: border-box;
+  padding:1em;
+  @media screen and (min-width: $break-tablet) {
+    padding:2em;
+  }  
+}

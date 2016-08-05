@@ -1,0 +1,13 @@
+.ds-intro {width: 100%; float: none; margin:0 0 15px 0; }
+
+.ds-midde { width:100%; float:none; margin:0 0 15px 0;}
+
+.ds-bottom-right { width: 47%; float: right; margin:0 0 15px 0;}
+
+.ds-bottom-left {width: 47%; float: left; margin:0 0 15px 0;}
+
+@media only screen and (min-device-width : 0px) and (max-device-width : 600px), (min-width : 0px) and (max-width : 600px) {
+.ds-bottom-right { width: 100%; float: none; margin:0 0 20px 0;}
+.ds-bottom-left {width: 100%; float: none; margin:0 0 20px 0;}
+
+}

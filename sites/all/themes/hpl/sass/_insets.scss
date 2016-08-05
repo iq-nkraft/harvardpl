@@ -1,0 +1,86 @@
+/* STYLES for INSET BLOCKS USED AS VISUAL ELEMENTS, INCLUDING DEFAULT GREY, ALTERNATE DARK VERSION IN TEAL, AND SOME OVERIDES FOR GREY BOX AND OTHER THINGS */
+.inset {
+  background-color: $light-grey;
+  box-sizing: border-box;
+  padding:2em 0;  
+  box-shadow:$shadow-inset;
+  @media (min-width: $break-tablet) { 
+    padding:2em 0;
+  } 
+  @media (min-width: $break-medium) { 
+    padding:3em 0;
+  }   
+  .eight.columns & {
+    padding:1em;
+    margin-bottom:2em;
+    position:relative;
+    @media (min-width: $break-tablet) { 
+      padding:2em;
+      margin-left:-8%;
+      margin-right:-8%;      
+    } 
+    @media (min-width: $break-medium) { 
+      padding:2em;
+      margin-left:-26%;
+      margin-right:-26%;      
+    }     
+  }
+  &.iq-mission {
+    padding:2em 0;
+  }  
+  &.margin-bottom {
+    margin-bottom:$margin-bottom;
+  }
+  h2.section-heading span {
+    background-color: $light-grey;
+  }
+  h3 {
+    text-align: left;
+  }
+  p:last-child {
+    margin:0;
+  }
+  &.dark {
+    background-color: $iq-dark-teal;
+    color:#FFF;
+    a {
+      color:#FFF;
+    }
+    @media (min-width: $break-large) { 
+      background:url(../images/inset-alt-bg-1.png) no-repeat top left, url(../images/inset-alt-bg-2.png) no-repeat bottom right, $iq-dark-teal;   
+    }    
+    h2.section-heading {
+      background: url(../images/bg-dotted-white.png) repeat-x center;
+      background-size:1%;
+      span {
+        background-color: $iq-dark-teal;
+
+      }
+      
+    }    
+  }
+  .grey-box {
+    width: 85%;
+    max-width: 960px;
+    margin:0 auto;
+    h2 {
+      text-transform: uppercase;
+      font-size: 3.6rem;
+      font-weight: 400;
+      margin: 0.2em 0;
+      &:last-child {
+        margin-bottom:.5em;
+      }
+    }
+    h1 {
+      text-transform: uppercase;
+      font-size: 3.6rem;
+      font-weight: 400;
+      margin: 0.2em 0; 
+      &:last-child {
+        
+      }           
+    }
+  }
+
+}

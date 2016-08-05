@@ -1,0 +1,96 @@
+.landing-page-box {
+
+  float:left; 
+  text-align: center;
+  margin-top:0;
+  padding:1em 1em;
+  margin:.75em 0;
+  background:#FFF;
+  box-sizing:border-box;
+  border:1px solid lighten($accent4, 5%); 
+  width:100%;
+  color:$text-blue;
+  cursor: pointer;
+  position:relative;
+  @media (min-width: $break-tablet) {
+    width:46%;
+    margin:.5em 2%;
+  }
+  @media (min-width: $break-large) {
+    width:30%;
+    margin:.5em 1.16%;
+    min-height:290px;
+  }  
+  h2 {
+    text-align: center!important;
+    color:$accent1;
+    font-size: 28px;
+    margin-bottom:.5em;
+    a {
+      text-decoration: none;
+      color:$accent1;
+    }
+  }
+  .landing-box-icon {
+    font-size: 60px;
+    color:$accent1;
+    line-height: 90px;
+    transition: all 0.1s ease-out;
+  }
+  p {
+    margin:0;
+  }
+  &:hover {
+    
+    -webkit-transition: all .3s cubic-bezier(.55,.085,0,.99) .2s;
+    transition: all .3s cubic-bezier(.55,.085,0,.99) .2s;          
+    .landing-box-icon {
+      font-size:68px;
+      transition: all 0.1s ease-out;
+    -webkit-transition: all .3s cubic-bezier(.55,.085,0,.99) .2s;
+    transition: all .3s cubic-bezier(.55,.085,0,.99) .2s;
+    transform:rotate(0.015turn);
+    }
+  }
+}
+
+// .field-item.odd .landing-page-box {
+//   background:$blue-dark;
+//   color:$teal;
+//   h2 {
+//     text-align: center!important;
+//     color:$teal;
+//   }  
+// }
+
+// .field-item.even .landing-page-box {
+//     background:$teal;
+//     color:$blue-dark;
+//     h2 {
+//       color:$blue-dark;
+//     }
+// }
+
+.landing-box-description {
+  position: relative;
+}
+
+.landing-page-box .landing-box-description:before {
+    content: "";
+    opacity: 0;
+    position: absolute;
+    width: 0;
+    height: 1px;
+    top: -10px;
+    left: 50%;
+    border-bottom: 2px dotted $accent1;
+    -webkit-transition: all .3s ease-in;
+    transition: all .3s ease-in;
+}
+.landing-page-box:hover .landing-box-description:before {
+    width: 120px;
+    margin-left: -60px;
+    opacity: 1;
+    -webkit-transition: all .3s cubic-bezier(.55,.085,0,.99) .2s;
+    transition: all .3s cubic-bezier(.55,.085,0,.99) .2s;
+}

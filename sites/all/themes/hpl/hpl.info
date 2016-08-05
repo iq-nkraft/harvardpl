@@ -1,0 +1,47 @@
+name = HPL Skeleton Theme
+description = Harvard Public Library theme using Skeleton as starting point. CSS is written in SCSS
+package = Core
+version = VERSION
+core = 7.x
+
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Regions
+;;;;;;;;;;;;;;;;;;;;;
+
+regions[navigation]     	= 'Navigation'
+regions[header]         	= 'Header'
+regions[hero]    			= 'Hero'
+regions[title]    			= 'Title'
+regions[highlighted]    	= 'Highlighted'
+regions[highlighted2]    	= 'Highlighted2'
+regions[highlighted3]    	= 'Highlighted3'
+regions[highlighted4]    	= 'Highlighted4'
+regions[help]           	= 'Help'
+regions[content]        	= 'Content'
+regions[content_bottom]     = 'Content Bottom'
+regions[promo]        		= 'Promo'
+regions[footer]         	= 'Footer'
+;regions[higlighted_bottom]    	= 'Highlighted Bottom'
+;regions[listing_bottom]      	= 'Listing Bottom'
+;regions[sidebar_first]  		= 'Sidebar Left'
+;regions[sidebar_second] 		= 'Sidebar Right'
+;regions[page_top]       		= 'Page top'
+;regions[page_bottom]    		= 'Page bottom'
+
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Stylesheets
+;;;;;;;;;;;;;;;;;;;;;
+
+stylesheets[all][] = css/styles.css
+stylesheets[all][] = js/slick.css
+
+
+scripts[] = 'js/jquery.lazyload.js'
+scripts[] = 'js/slick.min.js'
+scripts[] = 'js/column-detection.js'
+scripts[] = 'js/hpl.js'
+
+
+
