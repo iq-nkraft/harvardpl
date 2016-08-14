@@ -7,6 +7,8 @@ sites/*/files
 sites/*/private
 sites/*/.sass-cache
 sites/*/.sass-cache/*
+sites/all/themes/hpl/.sass-cache
+sites/all/themes/hpl/.sass-cache/*
 
 # Ignore default text files
 robots.txt
