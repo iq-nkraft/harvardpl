@@ -27,7 +27,7 @@
  * @ingroup views_templates
  */
 ?>
-<div class="container">
+<div class="containerxx">
 
 <div class="<?php print $classes; ?>">
   <?php print render($title_prefix); ?>

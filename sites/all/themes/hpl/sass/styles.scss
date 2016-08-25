@@ -86,14 +86,20 @@ h3 {
       color:#FFF;
       text-shadow: -2px 2px 15px #000;
       text-shadow: -2px 2px 15px rgba(0,0,0,.6);
+      @media (min-width: $break-desktop) {
+
+      }
     }
-    #block-blockify-blockify-page-title {
+    #block-blockify-blockify-page-title, #block-block-17 {
       position:absolute;
       top:58%;
       margin-top:-30px;
       width: 100%;
       @media (min-width: $break-desktop) {
         top:64%;
+        margin-left:-375px;
+        left:50%;
+        width:750px;
       }
     }
 }
@@ -121,7 +127,7 @@ h3 {
 }
 .not-front.children {
   .region-hero {
-    background:url(../images/header-childrens-room.jpg) no-repeat #AAA;
+    background:url(../images/header-childrens-room2.jpg) no-repeat #AAA;
     background-size:cover;
     background-position:center center;
   }
@@ -409,8 +415,11 @@ h1.iq-all-caps {
   }
 }
 
-
-
+/* Childrens room */
+.posted-date p {
+  margin-bottom: 1em;
+  color: #AAA;
+}
 
 
 /* ## SOCIAL MEDIA ICONS ## */
@@ -1469,6 +1478,11 @@ li.list-icon:before {
       opacity:1;
     }
   }
+}
+.node-type-page #content-container.container, .node-type-blog #content-container.container {
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .research-resources {
   #block-system-main .container {

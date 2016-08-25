@@ -82,7 +82,6 @@
 ?>
 
 
-<div id="content-container" class="container">
   <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> row clearfix"<?php print $attributes; ?>>
   <!--
     <?php print $user_picture; ?>
@@ -114,7 +113,6 @@
     
 
   </div>
-</div>
 
 
 <?php print render($content['comments']); ?>

@@ -164,8 +164,8 @@
       <?php endif; ?>
 
         <div id="content">
-          
 
+          <div id="content-container" class="container">
             <a id="main-content"></a>
             <!--
             <?php print render($title_prefix); ?>
@@ -177,7 +177,7 @@
             <?php if ($action_links): ?><ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>
             <?php print render($page['content']); ?>
             <?php print $feed_icons; ?>
-          
+          </div>
         </div> <!-- /#content -->
 
       </div> <!-- /#main -->

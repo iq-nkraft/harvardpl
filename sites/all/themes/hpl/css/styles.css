@@ -883,7 +883,7 @@ input[type="reset"]:focus,
 input[type="button"]:focus {
   outline: 1px solid #0d99a6; }
 
-.button.button-primary, .comment-form input.button[type="submit"], .button-container a.button-primary, .pager-load-more li > a, .webform-confirmation + .links a.button-primary, .webform-confirmation + .links .pager-load-more li > a, .pager-load-more .webform-confirmation + .links li > a,
+.button.button-primary, .comment-form input.button[type="submit"], .button-container a.button-primary, .pager-load-more .button-container li > a, .pager-load-more li > a, .webform-confirmation + .links a.button-primary, .webform-confirmation + .links .pager-load-more li > a, .pager-load-more .webform-confirmation + .links li > a,
 button.button-primary,
 input[type="submit"].button-primary,
 .comment-form input[type="submit"],
@@ -894,7 +894,7 @@ input[type="button"].button-primary,
   color: #FFF;
   background-color: #7d0e22; }
 
-.button.button-primary:hover, .comment-form input.button[type="submit"]:hover, .button-container a.button-primary:hover, .pager-load-more li > a:hover, .webform-confirmation + .links a.button-primary:hover,
+.button.button-primary:hover, .comment-form input.button[type="submit"]:hover, .button-container a.button-primary:hover, .pager-load-more .button-container li > a:hover, .pager-load-more li > a:hover, .webform-confirmation + .links a.button-primary:hover, .pager-load-more .webform-confirmation + .links li > a:hover,
 button.button-primary:hover,
 input[type="submit"].button-primary:hover,
 .comment-form input[type="submit"]:hover,
@@ -905,8 +905,10 @@ input[type="button"].button-primary:hover,
 .button.button-primary:focus,
 .comment-form input.button[type="submit"]:focus,
 .button-container a.button-primary:focus,
+.pager-load-more .button-container li > a:focus,
 .pager-load-more li > a:focus,
 .webform-confirmation + .links a.button-primary:focus,
+.pager-load-more .webform-confirmation + .links li > a:focus,
 button.button-primary:focus,
 input[type="submit"].button-primary:focus,
 .comment-form input[type="submit"]:focus,
@@ -918,7 +920,7 @@ input[type="button"].button-primary:focus,
   background-color: #a1011d;
   border-color: #1EAEDB; }
 
-.button.button-primary:focus, .comment-form input.button[type="submit"]:focus, .button-container a.button-primary:focus, .pager-load-more li > a:focus, .webform-confirmation + .links a.button-primary:focus,
+.button.button-primary:focus, .comment-form input.button[type="submit"]:focus, .button-container a.button-primary:focus, .pager-load-more .button-container li > a:focus, .pager-load-more li > a:focus, .webform-confirmation + .links a.button-primary:focus, .pager-load-more .webform-confirmation + .links li > a:focus,
 button.button-primary:focus,
 input[type="submit"].button-primary:focus,
 .comment-form input[type="submit"]:focus,
@@ -6079,7 +6081,7 @@ i {
     float: left;
     width: 40%;
     margin-right: 7%;
-    margin-top: 0.5em; } }
+    margin-top: 0.25em; } }
 .image.left.smaller {
   width: 20%; }
 @media (min-width: 480px) {
@@ -6087,7 +6089,7 @@ i {
     float: right;
     width: 40%;
     margin-left: 7%;
-    margin-top: 0.5em; } }
+    margin-top: 0.25em; } }
 
 .inset .image.inline {
   margin-bottom: 0; }
@@ -7248,14 +7250,17 @@ h3 a {
     color: #FFF;
     text-shadow: -2px 2px 15px #000;
     text-shadow: -2px 2px 15px rgba(0, 0, 0, 0.6); }
-  .not-front .region-hero #block-blockify-blockify-page-title {
+  .not-front .region-hero #block-blockify-blockify-page-title, .not-front .region-hero #block-block-17 {
     position: absolute;
     top: 58%;
     margin-top: -30px;
     width: 100%; }
     @media (min-width: 1024px) {
-      .not-front .region-hero #block-blockify-blockify-page-title {
-        top: 64%; } }
+      .not-front .region-hero #block-blockify-blockify-page-title, .not-front .region-hero #block-block-17 {
+        top: 64%;
+        margin-left: -375px;
+        left: 50%;
+        width: 750px; } }
 
 .not-front.about .region-hero {
   background: url(../images/about-2.jpg) no-repeat #AAA;
@@ -7273,7 +7278,7 @@ h3 a {
   background-position: center center; }
 
 .not-front.children .region-hero {
-  background: url(../images/header-childrens-room.jpg) no-repeat #AAA;
+  background: url(../images/header-childrens-room2.jpg) no-repeat #AAA;
   background-size: cover;
   background-position: center center; }
 
@@ -7517,6 +7522,11 @@ h1.iq-all-caps {
   @media (min-width: 960px) {
     .iq-emphasis {
       font-size: 200%; } }
+
+/* Childrens room */
+.posted-date p {
+  margin-bottom: 1em;
+  color: #AAA; }
 
 /* ## SOCIAL MEDIA ICONS ## */
 #header .header-social-icons {
@@ -8477,6 +8487,11 @@ li.list-icon:before {
       box-sizing: border-box;
       padding: 0 2em;
       opacity: 1; } }
+
+.node-type-page #content-container.container, .node-type-blog #content-container.container {
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto; }
 
 .research-resources #block-system-main .container {
   width: 88%;
