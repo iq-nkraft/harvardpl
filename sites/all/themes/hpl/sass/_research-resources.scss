@@ -299,7 +299,9 @@
         margin:1em 0;
     }    
 }
-
+.paragraphs-item-accordion {
+    margin-bottom: 3em;
+}
 .js {
     .paragraphs-item-accordion {
 
@@ -352,6 +354,9 @@
     }    
 }
 
+#block-system-main .node > .content {
+    width: 100%;
+}
 
 ul.instructions-list {
     padding:0!important;

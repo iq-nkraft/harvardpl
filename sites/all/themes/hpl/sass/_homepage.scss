@@ -34,6 +34,18 @@
 
 .homepage-calendar {
     box-sizing: border-box;
+    color:$text-grey;
+    a {
+      color:$secondary-color;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+	table {
+		margin-bottom:0;
+	}
+
     .views-row {
     	margin-bottom:.5em;
     	padding-bottom: .5em;
@@ -72,6 +84,56 @@
     }
 }
 
+/* EVNENTS AND PROGRAMS */
+.event-list {
+	table {
+		border-collapse: collapse;
+		width:100%;
+		background: transparent;
+		tbody {
+			border:none;
+		}
+	}
+	tr.odd, tr.even {
+		background:transparent;
+		padding:0;
+		border-bottom: dashed 1px $border-grey;
+		&:last-child {
+			border-bottom:none;
+		}
+	}
+	td {
+		margin-bottom:.5em;
+		padding-bottom: .5em;
+		border-bottom:none;
+	}
+}
+td.views-field.views-field-field-program-date {
+	width: 80px;
+}
+td.views-field.views-field-field-program-date-1 {
+	width: 188px;
+}
+.field-name-field-program-date {
+  margin-bottom:.5em;
+}
+.field-name-field-program-date .field-item:before {
+  font-family: 'icomoon';
+  content: '\e789\00a0';
+  color: $accent1;
+  font-size: 1.7em;
+  vertical-align: middle;
+}
+.field-name-field-registration-required {
+	margin-bottom:.5em;
+}
+.field-name-field-registration-required .field-item:before {
+	content: '\e6f5\00a0';
+	font-family: 'icomoon';
+	color: $accent1;
+	font-size: 1.7em;
+	vertical-align: middle;
+}
 #highlighted {
 	background:$teal;
 	color:$blue-dark;
@@ -121,6 +183,10 @@
 	.large-icon {
 		color:$accent1;
 	}
+}
+.button.purple-button {
+	color:$accent1!important;
+	border-color:$accent1!important;
 }
 
 .book-rotator {

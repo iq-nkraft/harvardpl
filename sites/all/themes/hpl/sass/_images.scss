@@ -49,6 +49,11 @@
       margin-left:7%;
       margin-top:.25em
     }
+    &.blog-list {
+      @media (min-width: $break-small) {
+        width: 33%;
+      }
+    }
   }
 }
 .inset .image.inline {
