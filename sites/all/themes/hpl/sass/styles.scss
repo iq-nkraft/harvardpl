@@ -17,6 +17,7 @@
 @import 'paragraphs-text-image';
 @import 'paragraphs-landing-box';
 @import 'component-calendar';
+@import 'component-accordions';
 @import 'section-children';
 @import 'section-teens';
 
@@ -143,6 +144,13 @@ h3 {
 .not-front.teens {
   .region-hero {
     background:url(../images/header-teens-.jpg) no-repeat #AAA;
+    background-size:cover;
+    background-position:center center;
+  }
+}
+.not-front.how-do-i {
+  .region-hero {
+    background:url(../images/header-how-do-i.jpg) no-repeat #AAA;
     background-size:cover;
     background-position:center center;
   }

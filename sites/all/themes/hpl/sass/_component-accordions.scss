@@ -1,0 +1,89 @@
+/* Styles for jQuery Accordions. Logic on line 300 of js/hpl.js */
+.paragraphs-item-accordion {
+  margin-bottom: 3em;
+}
+.js {
+  .paragraphs-item-accordion {
+
+  }
+  .paragraphs-item-accordion-row {
+    border-bottom:1px solid $border-grey;
+    .accordion-row-header {
+      margin-bottom:0!important;
+      padding:.5em 40px .5em 0;
+      color:$accent1;
+      position:relative;
+      cursor:pointer;
+      @media (min-width: $break-tablet) {
+
+      }
+      &:after {
+        content: '\e881';
+        font-family: 'Linearicons-Free';
+        position: absolute;
+        right: .25em;
+        top:50%;
+        margin-top:-13px;
+        -webkit-transition: all .5s ease-out;
+        transition: all .5s ease-out;
+        @media (min-width: $break-tablet) {
+          margin-top:-16px;
+        }
+      }
+      &.active {
+        color:$primary-color;
+        &:after {
+          transform: rotate(225deg);
+          -webkit-transition: all .5s ease-out;
+          transition: all .5s ease-out;
+
+        }
+      }
+    }
+    .accordion-row-content {
+      display:none;
+      // max-height: 0;
+      // overflow: hidden;
+      // transition: max-height 0.15s ease-out;
+      &.open {
+        // display:block;
+        // max-height: 1000px;
+        // transition: max-height 0.25s ease-in;
+      }
+    }
+  }
+}
+
+
+.hidden-accordion {
+  > .accordion-title {
+    cursor: pointer;
+    position: relative;
+    &:after {
+      content: '\e881';
+      font-family: 'Linearicons-Free';
+      position: absolute;
+      //right: .25em;
+      top:50%;
+      margin-left: .5em;
+      font-size: .8em;
+      -webkit-transition: all .5s ease-out;
+      transition: all .5s ease-out;
+      @media (min-width: $break-tablet) {
+        margin-top:-16px;
+      }
+    }
+    &.active {
+      //color:$primary-color;
+      &:after {
+        transform: rotate(225deg);
+        -webkit-transition: all .5s ease-out;
+        transition: all .5s ease-out;
+
+      }
+    }
+  }
+  > .paragraphs-items {
+    display: none;
+  }
+}

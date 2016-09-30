@@ -317,7 +317,30 @@
 
         }
 
-      });      
+      });
+
+      // homebrew accordion, hidden accordion, nk
+      $('.hidden-accordion .accordion-title', context).click(function (c) {
+        c.preventDefault();
+        if ($(this).hasClass('active')) {
+          $(this).removeClass('active');
+          $('.hidden-accordion .paragraphs-items').removeClass('open').slideToggle();
+        } else {
+          var accordionContent = $(this).find('.paragraphs-items');
+          $(this).addClass('active');
+          $('.hidden-accordion .accordion-title').not(this).removeClass('active');
+          $('.hidden-accordion .paragraphs-items').addClass('open').slideToggle();
+          // setTimeout(function () {
+          //       $(panelID).addClass('visible');
+          // }, 20);
+          // if ($('.hidden-accordion .paragraphs-items').not(accordionContent).hasClass('open')) {
+          //   $('.hidden-accordion .paragraphs-items.open').not(accordionContent).removeClass('open').slideToggle();
+          // }
+
+        }
+
+      });
+
 
       //scroll to comments on click
       $('.search-forms .etabs .tab a', context).click(function (c) {

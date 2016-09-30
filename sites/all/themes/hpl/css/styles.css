@@ -7100,38 +7100,6 @@ ul.menu-sub.menu-open {
 .node-type-resource-database .field-name-field-url-to-database {
   margin: 1em 0; }
 
-.paragraphs-item-accordion {
-  margin-bottom: 3em; }
-
-.js .paragraphs-item-accordion-row {
-  border-bottom: 1px solid #cdc7be; }
-  .js .paragraphs-item-accordion-row .accordion-row-header {
-    margin-bottom: 0 !important;
-    padding: .5em 40px .5em 0;
-    color: #5b2466;
-    position: relative;
-    cursor: pointer; }
-    .js .paragraphs-item-accordion-row .accordion-row-header:after {
-      content: '\e881';
-      font-family: 'Linearicons-Free';
-      position: absolute;
-      right: .25em;
-      top: 50%;
-      margin-top: -13px;
-      -webkit-transition: all .5s ease-out;
-      transition: all .5s ease-out; }
-      @media (min-width: 600px) {
-        .js .paragraphs-item-accordion-row .accordion-row-header:after {
-          margin-top: -16px; } }
-    .js .paragraphs-item-accordion-row .accordion-row-header.active {
-      color: #8c9839; }
-      .js .paragraphs-item-accordion-row .accordion-row-header.active:after {
-        transform: rotate(225deg);
-        -webkit-transition: all .5s ease-out;
-        transition: all .5s ease-out; }
-  .js .paragraphs-item-accordion-row .accordion-row-content {
-    display: none; }
-
 #block-system-main .node > .content {
   width: 100%; }
 
@@ -7331,6 +7299,61 @@ ul.helpful-links {
   font-weight: normal;
   font-size: 1.3rem; }
 
+/* Styles for jQuery Accordions. Logic on line 300 of js/hpl.js */
+.paragraphs-item-accordion {
+  margin-bottom: 3em; }
+
+.js .paragraphs-item-accordion-row {
+  border-bottom: 1px solid #cdc7be; }
+  .js .paragraphs-item-accordion-row .accordion-row-header {
+    margin-bottom: 0 !important;
+    padding: .5em 40px .5em 0;
+    color: #5b2466;
+    position: relative;
+    cursor: pointer; }
+    .js .paragraphs-item-accordion-row .accordion-row-header:after {
+      content: '\e881';
+      font-family: 'Linearicons-Free';
+      position: absolute;
+      right: .25em;
+      top: 50%;
+      margin-top: -13px;
+      -webkit-transition: all .5s ease-out;
+      transition: all .5s ease-out; }
+      @media (min-width: 600px) {
+        .js .paragraphs-item-accordion-row .accordion-row-header:after {
+          margin-top: -16px; } }
+    .js .paragraphs-item-accordion-row .accordion-row-header.active {
+      color: #8c9839; }
+      .js .paragraphs-item-accordion-row .accordion-row-header.active:after {
+        transform: rotate(225deg);
+        -webkit-transition: all .5s ease-out;
+        transition: all .5s ease-out; }
+  .js .paragraphs-item-accordion-row .accordion-row-content {
+    display: none; }
+
+.hidden-accordion > .accordion-title {
+  cursor: pointer;
+  position: relative; }
+  .hidden-accordion > .accordion-title:after {
+    content: '\e881';
+    font-family: 'Linearicons-Free';
+    position: absolute;
+    top: 50%;
+    margin-left: .5em;
+    font-size: .8em;
+    -webkit-transition: all .5s ease-out;
+    transition: all .5s ease-out; }
+    @media (min-width: 600px) {
+      .hidden-accordion > .accordion-title:after {
+        margin-top: -16px; } }
+  .hidden-accordion > .accordion-title.active:after {
+    transform: rotate(225deg);
+    -webkit-transition: all .5s ease-out;
+    transition: all .5s ease-out; }
+.hidden-accordion > .paragraphs-items {
+  display: none; }
+
 /* STYLES FOR CHILDRENS ROOM SECTION */
 .svg-social-icons svg {
   margin-right: .5em;
@@ -7453,6 +7476,11 @@ h3 a {
 
 .not-front.teens .region-hero {
   background: url(../images/header-teens-.jpg) no-repeat #AAA;
+  background-size: cover;
+  background-position: center center; }
+
+.not-front.how-do-i .region-hero {
+  background: url(../images/header-how-do-i.jpg) no-repeat #AAA;
   background-size: cover;
   background-position: center center; }
 
