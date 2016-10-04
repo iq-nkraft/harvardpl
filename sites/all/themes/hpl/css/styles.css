@@ -7459,7 +7459,7 @@ h3 a {
   background-size: cover;
   background-position: center center; }
 
-.not-front.services .region-hero {
+.not-front.services .region-hero, .not-front.hfoa .region-hero {
   background: url(../images/header-volhall-03.jpg) no-repeat #AAA;
   background-size: cover;
   background-position: center center; }
@@ -7749,6 +7749,11 @@ p + ul, p + ol {
   .program-dates .label-inline {
     display: inline;
     font-weight: 600; }
+
+.node .date-display-range {
+  display: inline; }
+  .node .date-display-range:before {
+    content: '\00a0 '; }
 
 /* MISC OVERRIDES */
 #content input[type="text"], #content input[type="email"], #content input[type="password"] {
@@ -8591,6 +8596,9 @@ li.list-icon:before {
   .iq-stickyshare .buttonnext {
     text-align: left;
     margin-left: 1em; }
+
+.node-type-program-event- .field-name-body {
+  margin-top: 2em; }
 
 /* Landing pages */
 /*something */

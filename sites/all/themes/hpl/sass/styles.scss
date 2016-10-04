@@ -120,7 +120,7 @@ h3 {
     background-position:center center;
   }
 }
-.not-front.services {
+.not-front.services, .not-front.hfoa {
   .region-hero {
     background:url(../images/header-volhall-03.jpg) no-repeat #AAA;
     background-size:cover;
@@ -469,6 +469,12 @@ p + ul, p + ol {
   .label-inline {
     display:inline;
     font-weight:600;
+  }
+}
+.node .date-display-range {
+  display: inline;
+  &:before {
+    content: '\00a0 ';
   }
 }
 
@@ -1386,6 +1392,12 @@ li.list-icon:before {
   }
 
 }
+.node-type-program-event- {
+  .field-name-body {
+    margin-top:2em;
+  }
+}
+
 
 /* Landing pages */
 /*something */
