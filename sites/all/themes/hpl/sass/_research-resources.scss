@@ -98,6 +98,14 @@
     margin-top:1em;
 }
 
+.atoztabs-item {
+    display: inline-block;
+    margin: 0 .5em 0 0;
+}
+.atoztabs {
+    margin-bottom:2em;
+}
+
 .databases-alpha, .databases-subject {
     .views-row {
         margin-left:1em;
@@ -211,7 +219,7 @@
     &:last-child {
         border-bottom:none;
     }
-    p {
+    p:last-child {
         margin-bottom:0em;
     }
 

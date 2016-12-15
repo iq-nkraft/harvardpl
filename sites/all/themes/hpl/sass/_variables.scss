@@ -55,12 +55,14 @@ $border-radius-bottom:0 0 4px 4px;
 /* Animations */
 $transition-background: background .4s ease-out; 
 $transition-color: color .4s ease-out; 
-$transition-opacity: opacity .4s ease-out; 
+$transition-opacity: opacity .4s ease-out;
+$transition-all: all .4s ease-out;
 
 /* FONTS */
 
 $sans-serif: 'Work Sans', 'Helvetica Neue',  Helvetica, 'Calibri', Arial, sans-serif;
-$serif: 'EB Garamond', serif, Georgia, 'Times New Roman', Times, serif; 
+$serif: 'EB Garamond', serif, Georgia, 'Times New Roman', Times, serif;
+$icon: 'icomoon' !important;
 
 .nk-container {
 
@@ -298,8 +300,10 @@ $serif: 'EB Garamond', serif, Georgia, 'Times New Roman', Times, serif;
 .more-link {
   text-decoration: none;
   &:after {
-    content: '\e876';
-    font-family: Linearicons-Free;
+    //content: '\e876';
+    //font-family: Linearicons-Free;
+    content:'\e93c';
+    font-family: $icon;
     font-size: 13px;
     position: relative;
     top: -1px;
@@ -317,5 +321,23 @@ $serif: 'EB Garamond', serif, Georgia, 'Times New Roman', Times, serif;
     text-decoration: underline;
   }
 
+}
+.margin-top-1 {
+  margin-top:1em;
+}
+.margin-top-2 {
+  margin-top:2em;
+}
+.margin-top-3 {
+  margin-top:3em;
+}
+.margin-bottom-1 {
+  margin-bottom:1em;
+}
+.margin-bottom-2 {
+  margin-bottom:$margin-bottom;
+}
+.margin-bottom-3 {
+  margin-bottom:3em;
 }
 

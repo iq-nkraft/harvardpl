@@ -23,6 +23,11 @@
     background-color: transparent;
     color:lighten($field-green,10%);
   }
+  &.menu-active {
+    position:fixed;
+    top: 5px;
+    left: 9px;
+  }
   .menu-opened {
     color:$field-green;
   }
@@ -37,7 +42,7 @@ ul.menu ul.menu {
 
 #block-system-main-menu {
   display:block;
-  position: absolute;
+  //position: absolute;
   z-index: 101;
   background-color: $background-grey;
   left: 0;
@@ -55,7 +60,8 @@ ul.menu ul.menu {
   -webkit-transition: all .4s ease-out;
   transition: all .4s ease-out;
   width:300px;
-
+  position: fixed;
+  height:100%;
   &.opened {
     -moz-transform: translate3d(0,0px,0);
     -ms-transform: translate3d(0,0px,0);
@@ -65,6 +71,9 @@ ul.menu ul.menu {
     -moz-transition: all .4s ease-out;
     -webkit-transition: all .4s ease-out;
     transition: all .4s ease-out;
+    position: fixed;
+    height:100%;
+    overflow:scroll;
   }
   @media (min-width: $break-desktop) {
     display:block!important;
@@ -80,6 +89,10 @@ ul.menu ul.menu {
     -webkit-transform: translate3d(0,0px,0);
     transform: translate3d(0,0px,0);    
     width:auto;
+    &.opened {
+      position:static;
+      overflow: visible;
+    }
   }   
   @extend .iq-sans-serif;
   ul.menu {

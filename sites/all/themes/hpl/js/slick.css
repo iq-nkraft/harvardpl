@@ -24,24 +24,23 @@
 /* Icons */
 @font-face { font-family: "slick"; src: url('fonts/slick.eot'); src: url('fonts/slick.eot?#iefix') format("embedded-opentype"), url('fonts/slick.woff') format("woff"), url('fonts/slick.ttf') format("truetype"), url('fonts/slick.svg#slick') format("svg"); font-weight: normal; font-style: normal; }
 
-/* Arrows */
-.slick-prev, .slick-next { position: absolute; display: block; height: 100px; width: 40px; line-height: 0; font-size: 0; cursor: pointer; background: transparent; color: transparent; top: 50%; margin-top: -50px; padding: 0; border: none; outline: none; z-index:400; }
+
 .iq-expertise .slick-prev, .iq-expertise .slick-next {height:30px; width:20px; top:50%; margin-top:-15px;}
 .slick-prev:focus, .slick-next:focus { outline: none; }
 .slick-prev:hover, .slick-next:hover, .slick-prev:active, .slick-next:active, .slick-prev:focus, .slick-next:focus {background:none;}
 .slick-prev.slick-disabled:before, .slick-next.slick-disabled:before { opacity: 0.25; }
 
-.slick-prev:before, .slick-next:before { font-family: "FontAwesome"; font-size: 100px; line-height: 1; color: white; opacity: 0.55; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+.slick-prev:before, .slick-next:before { font-family: "icomoon"; font-size: 30px; line-height: 1; color: #5b2466; opacity: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 .iq-expertise .slick-prev:before, .iq-expertise .slick-next:before {font-size:30px;}
 .slick-prev:hover:before, .slick-next:hover:before {opacity:.85;}
 
-.slick-prev { left: 15px; }
-.slick-prev:before { content: "\f104"; }
+.slick-prev { left: -44px; }
+.slick-prev:before { content: "\e964"; }
 
 .iq-expertise .slick-prev { left: 0px; }
 
-.slick-next { right: 15px; }
-.slick-next:before { content: "\f105"; }
+.slick-next { right: -44px; }
+.slick-next:before { content: "\e965"; }
 
 .iq-expertise .slick-next { right: 0px; }
 

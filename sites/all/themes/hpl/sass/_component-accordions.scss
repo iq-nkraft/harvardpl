@@ -19,7 +19,9 @@
       }
       &:after {
         content: '\e881';
-        font-family: 'Linearicons-Free';
+        content: '\e95b';
+        //font-family: 'Linearicons-Free';
+        font-family: $icon;
         position: absolute;
         right: .25em;
         top:50%;
@@ -61,7 +63,9 @@
     position: relative;
     &:after {
       content: '\e881';
-      font-family: 'Linearicons-Free';
+      content:'\e95b';
+      //font-family: 'Linearicons-Free';
+      font-family: $icon;
       position: absolute;
       //right: .25em;
       top:50%;

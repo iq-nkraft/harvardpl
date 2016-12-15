@@ -1,28 +1,5 @@
 /* not-front highlighted menu */
-.not-front #highlighted {
-  /* float: left; */
-  background: lighten($accent4, 20%); 
-  left: 0;
-  box-sizing:border-box;
-  padding:0 0;
-  width:100%;
-  @media (min-width: $break-desktop) {
-    left:0;
-    position: absolute;
-    width:24%;
-    padding:2em 1.5em 1em 1.5em;
-  }
-  @media (min-width: $break-huge) {
-    left:0;
-    width:20%;
-    max-width:440px;
-  }  
-  @media (min-width: $break-massive) {
-    left:2em;
-    width:18%;
-    max-width:440px;
-  }    
-}
+
 #highlighted .left-nav {
   h2 {
     color:$leaf-green;
@@ -34,7 +11,9 @@
     position:relative;
     &:after {
         content: '\e881';
-        font-family: 'Linearicons-Free';
+        content:'\e95b';
+        //font-family: 'Linearicons-Free';
+        font-family: $icon;
         position: absolute;
         right: 6%;
             -webkit-transition: all .5s ease-out;
@@ -115,8 +94,9 @@
           color:#78968D;
         }
         &:after {
-          content: '\e876';
-          font-family: Linearicons-Free;
+          content: '\e93c';
+          //font-family: Linearicons-Free;
+          font-family: $icon;
           font-size: 13px;
           position: relative;
           top: -1px;

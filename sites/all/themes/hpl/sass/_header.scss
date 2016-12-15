@@ -64,12 +64,17 @@
   }
 }
 .not-front #logo {
-    width: 220px;
-    left:1em;
-    top:.5em;
-    width:160px;
-    @media (min-width: $break-desktop) {
-        width: 240px;
+  left:50%;
+  margin-left:-87px;
+  top:.75em;
+  width:160px;
+    @media (min-width: $break-tablet) {
+      left:1em;
+      margin-left:0;
+      top:.5em;
+      width:160px;
+    }
+    @media (min-width: $break-huge) {
         left: 2em;
         top:19px;
         margin-left:0;
